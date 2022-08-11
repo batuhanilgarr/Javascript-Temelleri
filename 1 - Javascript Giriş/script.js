@@ -1,0 +1,1 @@
+console.log("Sayfa Yüklendi"); //Bu kodu konsola yazdırır.

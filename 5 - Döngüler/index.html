@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Döngüler</title>
+</head>
+
+<body>
+
+ <script>
+
+  // Döngüler //
+
+  // ** For Döngüsü //
+
+/*
+  for(var i = 0; i <= 100; i++) {
+   if(i%2==0) { // i değeri 2'ye bölünürse
+    console.log(i); // i değerini yazdırılır
+   }
+  }
+  */
+
+  for (var i = 0; i <= 100; i++) { // i değeri 0 ile 100 arasında olduğu sürece
+   if(i==50){ // i değeri 50 ise
+    break // 50'e eşit olduğunda döngüden çıkılır
+   }
+   console.log(i); // i değerini yazdı
+   }
+
+    for (var i = 0; i <= 100; i++) { // i değeri 0 ile 100 arasında olduğu sürece
+      if (i == 50) { // i değeri 50 ise
+       continue // 50'e eşit olduğunda döngüden devam edilir
+      }
+      console.log(i); // i değerini yazdı
+     }
+
+
+
+
+  /* for (var i = 0; i <= 1000; i++) {
+   console.log(i); // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+  } 
+
+
+  var sehirler = ["kocaeli","istanbul","izmir","adana","rize"]; // Sehirler dizisi oluşturulur.
+
+  for(var i = 0; i <sehirler.length; i++) { // Sehirler dizisindeki her bir eleman için döngü oluşturulur. elemanlar 0 1 2 3 diye devam eder ilk eleman 0'dır
+   
+   console.log(sehirler[i]); // Sehirler dizisindeki her bir elemanı konsola yazdırılır.
+  }
+*/
+
+  // ** While Döngüsü //
+
+  /*
+  var i = 0; // i değişkeni 0 olarak tanımlanır.
+  while (i <= 10) { // i değişkeni 10 kadar devam eder.
+   console.log(i); // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+   i++; // i değişkeni 1 arttırılır.
+  }
+
+ var sehirler = ["kocaeli", "istanbul", "izmir", "adana", "rize"]; // Sehirler dizisi oluşturulur.
+ var i = 0; // i değişkeni 0 olarak tanımlanır.
+ while (i<sehirler.length) {
+  console.log(sehirler[i]); // Sehirler dizisindeki her bir elemanı konsola yazdırılır.
+  i++; // i değişkeni 1 arttırılır.
+ }
+ */
+ </script>
+
+
+</body>
+
+
+
+</html>

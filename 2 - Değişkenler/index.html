@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Değişkenler</title>
+</head>
+<body>
+
+ <script>
+
+  var marka; // değişken tanımlaması
+  console.log(marka); // undefined değerini verir
+
+  marka = prompt("Lütfen markanızı giriniz"); // değişken tanımlaması
+  console.log(marka); // değişken değerini görme
+
+  var model = "Astra"; // değişken ataması
+  console.log(marka+ " "+model); // değişken değerini görme ve birleştirme
+
+  var maxhiz = prompt("Maksimum hız : "); // Sayısal değer istemek için prompt kullanılır
+
+  var yakitdeposu = prompt("Yakıt Deposu kaç litre : "); // değişken istemek için prompt kullanılır
+  console.log(yakitdeposu * 5.60); // değişken değerini görme ve çarpma
+
+
+  var otomatik = prompt("Otomatik mi : "); // Boolean değer i
+  console.log(otomatik); // değişken değerini görme
+
+
+  console.log(marka+ " " + model+ " " + yakitdeposu + " litre yakıt deposuna sahip ve maksimum " + maxhiz + "km hız yapmaktadır." + " Peki araç otomatik midir ? "+ otomatik); // Belirtilen değişkenleri birleştirerek görme ve karşılaştırma işlemi yapma işlemi yapmaktadır.
+
+ </script>
+ 
+</body>
+</html>

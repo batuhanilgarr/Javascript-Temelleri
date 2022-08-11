@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Örnek Uygulama</title>
+</head>
+
+<body>
+
+
+ <script>
+
+  /*
+  Uygulama 1:
+
+  Girilen doğum yılına göre ehliyet alınıp alınmayacağını hesaplayınız. Eğer 18 yaşından küçük ise kaç senesi kalmıştır.
+
+
+  Uygulama 2:
+
+  Girilen ay bilgisine göre mevsim bilgisini yazınız.
+  (1:Ocak 2:Şubat ... 12:Aralık)
+  */
+
+
+
+
+  // Uygulama 1 :
+  var dogum = prompt("Dogum yılını giriniz"); //Kullanıcıdan doğum yılı alınır.
+  var yil = 2022; // şimdiki yıl
+  var yas = yil - dogum; //2018 - 1995 = 23
+
+  if (yas < 18) { //Eğer yas < 18 ise
+   console.log("Ehliyet Alamazsınız"); //Kullanıcıya bilgi verilir.
+   console.log("Kalan senesi " + (18 - yas) + " yıl kaldı"); //Kalan senesi kullanıcıya bilgi verilir.
+  }
+  else if (yas >= 18) { //Eğer yas >= 18 ise
+   console.log("Ehliyet Alabilirsiniz"); //Kullanıcıya bilgi verilir.
+  } else { //Eğer yas < 0 ise
+   console.log("Yanlış bir değer"); //Kullanıcıya bilgi verilir.
+  }
+
+
+  // Uygulama 2 :
+  var ay = prompt("Ayı giriniz : "); //Kullanıcıdan ay bilgisi alınır.
+  switch (ay) {
+   case '1':
+   case '2':
+   case '12':
+    console.log("Kış Mevsimidir");
+    break;
+   case '3':
+   case '4':
+   case '5':
+    console.log("İlkbahar Mevsimidir");
+    break;
+   case '6':
+   case '7':
+   case '8':
+    console.log("Yaz Mevsimidir");
+    break;
+   case '9':
+   case '10':
+   case '11':
+    console.log("Sonbahar Mevsimidir");
+    break;
+   default:
+    console.log("Yanlış bir değer");
+    break;
+  }
+
+ </script>
+
+</body>
+
+</html>
