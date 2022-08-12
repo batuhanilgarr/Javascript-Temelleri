@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Javascript Fonksiyonlar
+ </title>
+</head>
+
+<body>
+
+
+ <script>
+
+  /*
+    function topla(a, b) { // topla fonksiyonu
+     return a + b; // a ve b değerlerini toplar ve döndürür.
+  
+    }
+  
+    var sonuc = topla(10, 20); // topla fonksiyonunu çağırır ve 10 ve 20 değerlerini toplamını gösterir.
+    console.log(sonuc); // sonuc değerini ekrana yazdırır.
+    console.log(topla(40, 50)); // topla fonksiyonunu çağırır ve 40 ve 50 değerlerini toplamını gösterir.
+  */
+
+
+
+
+  var now = 2018; // 2018 değerini now değişkenine atar.
+
+  function yashesapla(yas) { // yashesapla fonksiyonu
+   return now - yas; // yas değerini 2018 değerinden çıkarıp döndürür.
+  }
+
+  var ahmet = yashesapla(1990); // yashesapla fonksiyonunu çağırır ve 1990 değerini yas değişkenine atar.
+  console.log(ahmet); // ahmet değerini ekrana yazdırır.
+  var ali = yashesapla(1996); // yashesapla fonksiyonunu çağırır ve 1996 değerini yas değişkenine atar.
+  console.log(ali); // ali değerini ekrana yazdırır.
+
+
+  function emeklilikHesapla(ad,yas) { // emeklilikHesapla fonksiyonu
+   var k_yas = yashesapla(yas); // yashesapla fonksiyonunu çağırır ve yas değerini k_yas değişkenine atar.
+   var emeklilik = 65 - k_yas; // k_yas değerini 65 ile çıkarıp emeklilik değişkenine atar.
+
+   if (emeklilik > 0) { // emeklilik değişkeninin değeri 0 dan büyükse
+    console.log(ad + " " + emeklilik + " yıl sonra emekli olabilir"); // ad değerini ekrana yazdırır ve emeklilik değerini ekrana yazdırır.
+   }else{ // emeklilik değişkeninin değeri 0 dan küçükse
+    console.log(ad + " zaten " + (emeklilik*-1) + " yıl önce emekli olmuş."); // ad değerini ekrana yazdırır ve emeklilik değerini ekrana yazdırır.
+   }
+
+   
+  }
+
+  emeklilikHesapla("Çınar",1998); // Çınar adıyla emeklilikHesapla fonksiyonunu çağırır ve 1998 değerini yas değişkenine atar.
+  emeklilikHesapla("Ali", 1950); // Ali adıyla emeklilikHesapla fonksiyonunu çağırır ve 1950 değerini yas değişkenine atar.
+
+
+ </script>
+
+
+
+</body>
+
+</html>

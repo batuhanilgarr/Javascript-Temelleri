@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Javascript Object</title>
+</head>
+
+<body>
+
+
+ <script>
+
+  /*
+  var marka = ["Opel","Toyota","Mazda"];
+  var model = ["Corsa","Yaris","CX-3"];
+  var Yil = ["2015","2012","2016"];
+  
+  console.log(marka[0] + " "+ model[0] + " " + Yil[0]); //Opel Corsa 2015
+  
+  var opel = ["Opel","Corsa","2015"]; 
+  var toyota = ["Toyota","Yaris","2012"];
+  var mazda = ["Mazda","CX-3","2016"];
+  
+  console.log(opel); //Opel Corsa 2015
+  */
+
+  var opel = {
+   marka: "Opel",
+   model: "Corsa",
+   yil: "2015",
+   renk: "Mavi",
+   otomatik: true
+  }
+
+  console.log(opel.marka); //Opel
+  console.log(opel.otomatik); //true
+  console.log(opel["renk"]); //Mavi
+
+
+  var toyota = new Object(); //Object() yerine new Object() kullanılır.
+  toyota.marka = "Toyota"; //toyota.marka = "Toyota";
+  toyota.model = "Yaris"; //Object.prototype.model = "Yaris";
+  toyota.yil = "2012"; //Object içinde değişken tanımlanabilir.
+  toyota.renk = "Kırmızı"; //renk adında bir property oluşturduk.
+  toyota.otomatik = true; //otomatik adında bir property oluşturduk.
+
+  console.log(toyota); //{ marka: 'Toyota', model: 'Yaris', yil: '2012', renk: 'Kırmızı', otomatik: true }
+
+  toyota.model = "Auris"; //Düzenleme
+
+  console.log(toyota); //{ marka: 'Toyota', model: 'Auris', yil: '2012', renk: 'Kırmızı', otomatik: true }
+
+
+  var arabalar = [ //Array içinde object oluşturduk.
+   {
+    marka: "Opel", //Object içinde değişken tanımlanabilir.
+    model: "Corsa", //Object içinde değişken tanımlanabilir.
+    yil: "2015", //Object içinde değişken tanımlanabilir.
+    renk: "Mavi", //renk adında bir property oluşturduk.
+    otomatik: true //otomatik adında bir property oluşturduk.
+   },
+   {
+    marka: "Toyota",
+    model: "Yaris",
+    yil: "2012",
+    renk: "Kırmızı",
+    otomatik: true
+   }
+  ];
+
+  for (var i = 0; i < arabalar.length; i++) {
+   console.log(arabalar[i].marka);
+  }
+
+  
+ </script>
+
+
+</body>
+
+</html>

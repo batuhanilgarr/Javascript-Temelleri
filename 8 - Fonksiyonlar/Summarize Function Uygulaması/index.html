@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Summarize Function Uygulaması</title>
+</head>
+
+<body>
+
+
+ <script>
+
+  /*
+  
+  Cümle Özetleme Uygulaması
+  
+  ** Bir cümle içinde istenilen karakter sayısına göre bir özet çıkarılsın. Ancak bölünecek nokta bir kelime olmasın.
+  
+  */
+
+  var product = {
+   name: "Samsung S8", // ürün adı
+   price: 3000, // ürün fiyatı
+   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, laudantium?", // ürün açıklaması
+   summary: function () { // ürün özeti
+    var ozetcumle = []; // özet cümle değişkeni
+    var maxKarakter = 20; // özet cümle için gösterilecek karakter sayısı
+    var cumle = this.description; // özet cümle değişkeni
+
+    if (maxKarakter > cumle.length) { // max karakter değişkeni cümle uzunluğuna bölünüyor mu kontrol ediliyor
+     this.shortDescription = cumle; // cümle uzunluğuna bölünmediyse kısa cümle olarak atanıyor
+    } else { // eğer bölünmüşse
+     var kelimeler = cumle.split(" "); // cümleyi kelimelere ayırıyor
+
+     var toplamKarakter = 0; // toplam karakter değişkeni
+
+     for (var i = 0; i < kelimeler.length; i++) { // kelimeler dizisi içinde dönüyor
+
+      ozetcumle.unshift(kelimeler[i]); // kelimeler dizisi içindeki kelimeyi özet cümle dizisine ekliyor
+      toplamKarakter += kelimeler[i].length; // kelimeler dizisi içindeki kelime uzunluğu toplam karakter değişkenine ekleniyor
+
+      if (toplamKarakter > maxKarakter) { // toplam karakter değişkeni max karakter değişkeni ile karşılaştırılıyor
+       break; // eğer eşitse döngüden çıkıyor
+      }
+     }
+
+    }
+
+    this.shortDescription = ozetcumle.join(" ") + "..." // özet cümle dizisi ekrana yazdırılıyor
+   }
+  };
+
+
+ product.summary(); // özet cümle çağırılıyor
+
+ console.log(product); // özet cümle ekrana yazdırılıyor
+
+
+// **********************************************************************************
+
+  // FONSİYONSUZ HALİ ; 
+
+  // var cumle = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, laudantium?"; // cümle değişkeni
+
+  // var maxKarakter = 24; // max karakter değişkeni
+  // var ozetcumle = []; // özet cümle değişkeni
+
+  // if (maxKarakter > cumle.length) { // max karakter değişkeni cümle uzunluğuna bölünüyor mu kontrol ediliyor
+  //  console.log(cumle); // eğer bölünmezse cümle ekrana yazdırılıyor
+  // } else { // eğer bölünmüşse
+  //  var kelimeler = cumle.split(" "); // cümleyi kelimelere ayırıyor
+
+  //  var toplamKarakter = 0; // toplam karakter değişkeni
+
+  //  for (var i = 0; i < kelimeler.length; i++) { // kelimeler dizisi içinde dönüyor
+
+  //   ozetcumle.unshift(kelimeler[i]); // kelimeler dizisi içindeki kelimeyi özet cümle dizisine ekliyor
+  //   toplamKarakter+= kelimeler[i].length; // kelimeler dizisi içindeki kelime uzunluğu toplam karakter değişkenine ekleniyor
+
+  //   if(toplamKarakter > maxKarakter) { // toplam karakter değişkeni max karakter değişkeni ile karşılaştırılıyor
+  //    break; // eğer eşitse döngüden çıkıyor
+  //   }
+  //  }
+
+  // }
+
+  // console.log(ozetcumle.join(" ") + "..."); // özet cümle dizisi ekrana yazdırılıyor
+
+ </script>
+
+
+
+</body>
+
+</html>

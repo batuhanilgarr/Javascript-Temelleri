@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Object Örnek Uygulama</title>
+</head>
+
+<body>
+
+ <script>
+
+
+  /*
+
+  #1 : Bir personelin aşağıdaki bilgilerini object içinde saklayınız.
+
+      ** ad : Ali
+      ** soyad : Yılmaz
+      ** cinsiyet : Erkek
+      ** telefon : 02623333333
+      ** adres : izmit kocaeli
+      ** meslek : bilgisayar mühendisi
+      ** diller : ingilizce, almanca
+      ** hobiler : sinema,spor,kitap okumak
+
+  #2 : Bu personel kaç dil bilmektedir ?
+  #3 : Bu personelin hobilerini alt alta yazdırınız.
+  #4 : 3 elemanlı bir personel bilgi listesi oluşturunuz.
+
+  */
+
+  var ali = {
+   ad: "Ali",
+   soyad: "Yılmaz",
+   cinsiyet: "Erkek",
+   telefon: "02623333333",
+   adres: "izmit kocaeli",
+   meslek: "bilgisayar mühendisi",
+   diller: ["ingilizce", "almanca"],
+   hobiler: ["sinema", "spor", "kitap okumak"]
+  };
+
+  console.log(ali.diller.length);
+
+  ali.hobiler.forEach(function (hobi) { // forEach ile hobi elemanını tek tek yazdırıyoruz.
+   console.log(hobi); // sinema,spor,kitap okumak
+  });
+
+
+  var personel = [
+   {
+    ad: "Ali",
+    soyad: "Yılmaz",
+    cinsiyet: "Erkek",
+    telefon: "02623333333",
+    adres: "izmit kocaeli",
+    meslek: "bilgisayar mühendisi",
+    diller: ["ingilizce", "almanca"],
+    hobiler: ["sinema", "spor", "kitap okumak"]
+   },
+   {
+    ad: "Mehmet",
+    soyad: "Yılmaz",
+    cinsiyet: "Erkek",
+    telefon: "02623333333",
+    adres: "izmit kocaeli",
+    meslek: "Personel mühendisi",
+    diller: ["İtalyanca", "almanca"],
+    hobiler: ["sinema", "spor", "kitap okumak"]
+   },
+   {
+    ad: "Pınar",
+    soyad: "Yılmaz",
+    cinsiyet: "Kadın",
+    telefon: "02623333333",
+    adres: "izmit kocaeli",
+    meslek: "Elektronik mühendisi",
+    diller: ["Fransızca", "almanca","İtalyanca"],
+    hobiler: ["sinema", "spor", "kitap okumak"]
+   }
+  ];
+
+  personel.forEach(function (personel) { // forEach ile personel elemanını tek tek yazdırıyoruz.
+   console.log('*******************')
+   console.log(personel.ad + " " + personel.soyad); // Ali Yılmaz, Mehmet Yılmaz, Pınar Yılmaz
+
+   personel.diller.forEach(function (dil) { // forEach ile diller elemanını tek tek yazdırıyoruz.
+    console.log(dil); // ingilizce, almanca, italyanca, fransızca
+   });
+   console.log('*******************')
+  });
+
+
+ </script>
+
+</body>
+
+</html>

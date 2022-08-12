@@ -30,27 +30,27 @@ if(10 ==='10'){
 
 */
 
-
-
-
-
-
 /* SWİTCH statement */
 
 // 1 : manuel
 // 2 : otomatik
 var vites = '2' // Vites değişkeni
 
-if (vites == 1) { // Vites değişkeni 1 ise
+if (vites == 1) {
+  // Vites değişkeni 1 ise
   console.log('manuel') // Manuel yazdırır.
-} else if (vites == '2') { // Vites değişkeni 2 ise
+} else if (vites == '2') {
+  // Vites değişkeni 2 ise
   console.log('otomatik') // Otomatik yazdırır.
-} else { // Vites değişkeni 1 ve 2 değilse
+} else {
+  // Vites değişkeni 1 ve 2 değilse
   console.log('Yanlış bir değer') // Yanlış bir değer yazdırır.
 }
 
-vites='3'; // Vites değişkeni 3 yapıyoruz.
-switch (vites) { // Vites değişkeni ile switch statement'i karşılaştırıyoruz.
+vites = '3' // Vites değişkeni 3 yapıyoruz.
+switch (
+  vites // Vites değişkeni ile switch statement'i karşılaştırıyoruz.
+) {
   case '1': // Vites değişkeni 1 ise
     console.log('Araç manuel') // Manuel yazdırır.
     break // Switch statement'i kırıyoruz.

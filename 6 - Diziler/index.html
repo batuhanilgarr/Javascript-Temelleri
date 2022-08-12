@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Javascript Diziler</title>
+</head>
+
+<body>
+
+ <script>
+
+  var marka = ["Opel", "Totoya", "Mazda", "Renault"]; // Dizi oluşturduk.
+  var model = new Array("Corsa", "Yaris", "CX-3", "Clio"); // Dizi oluşturduk. 
+
+  console.log(marka[2]); // Mazda modelini ekrana yazdırdık.
+  console.log(model[2]); // CX-3 modelini ekrana yazdırdık.
+
+  model[0] = "Astra"; // Dizi içerisindeki ilk elemanı değiştirdik.
+  console.log(model);
+
+
+  var auris = ["Toyota", "Auris", 42, true]; // Dizi oluşturduk.
+
+  auris.push('blue'); // Diziye eleman ekledik.
+  auris.unshift('HB'); // Dizi en başa eleman ekledik.
+  auris.pop(); // Dizi son elemanı sildik.
+  auris.shift(); // Dizi en başa elemanı sildik.
+
+  console.log(auris); // Dizi elemanlarını ekrana yazdırdık.
+
+  for (var i = 0; i < marka.length; i++) { // Dizi içerisindeki elemanları ekrana yazdırdık.
+   console.log(marka[i]); // Dizi içerisindeki elemanları ekrana yazdırdık.
+  }
+
+
+
+  if (marka.indexOf("Mazda") !== -1) { // Dizi içerisinde "Mazda" modeli var mı kontrol ettik.
+   console.log("Mazda modeli var."); // Eğer var ise "Mazda modeli var." yazdırdık.
+  }
+  else {
+   console.log("Mazda modeli yok."); // Eğer yok ise "Mazda modeli yok." yazdırdık.
+  }
+
+
+
+ </script>
+
+
+
+
+</body>
+
+</html>

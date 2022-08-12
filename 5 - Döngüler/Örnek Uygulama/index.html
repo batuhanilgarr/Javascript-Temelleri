@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döngüler Örnek Uygulama</title>
+</head>
+
+<body>
+
+    <script>
+
+        /*
+           #1 : 10 - 100 arasındaki sayıları yazdırın. (for)
+
+                    for (var i = 10; i <= 100; i++) {
+                        console.log(i);
+                    }
+
+                    for (var i = 100; i >= 10; i++) {
+                        console.log(i);
+                    }
+        
+           #2 : 10 - 100 arasındaki sayıları yazdırın. (while)
+
+                var i = 10;
+                while (i <= 100) {
+                    console.log(i);
+                    i=i+5;
+                }
+        
+           #3 : Login Kontrolü : Kullanıcı adı ve parola kontrolünden geçene kadar kullanıcı bilgilerini kullanıcıdan isteyin
+        
+               var k_username = "guest";
+               var k_password = "12345";
+
+
+
+    Cevap : 
+        var k_username = "guest"; //kullanıcı adı
+        var k_password = "12345"; //parola
+        var loggedin = false; //giriş yapılmış mı?
+
+
+        while (loggedin == false) { //giriş yapılmamışsa
+            // loggedin == false yerine !loggedin kullanılabilir.
+
+            var username = prompt("Kullanıcı adınızı giriniz"); //kullanıcı adınızı giriniz
+            var password = prompt("Parolanızı giriniz"); //parolanızı giriniz
+
+            if ((k_username == username) && (k_password == password)) { //kullanıcı adı ve parola doğru ise
+                console.log("Hoşgeldiniz"); //hoşgeldiniz yazdırın
+                loggedin = true; //giriş yapıldı
+            } else { //kullanıcı adı ve parola yanlış ise
+                console.log("Kullanıcı adı veya parola hatalı"); //kullanıcı adı veya parola hatalı yazdırın
+            }
+        }
+        
+        */
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
