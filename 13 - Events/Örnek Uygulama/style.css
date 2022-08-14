@@ -1,0 +1,18 @@
+.kutu{
+ width: 120px;
+ height: 120px;
+ margin: 10px;
+ float: left;
+}
+
+#mavi{
+ background-color: #00f;
+}
+
+#kirmizi{
+ background-color: #f00;
+}
+
+#sari{
+ background-color: #ff0;
+}
